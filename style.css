@@ -1,0 +1,42 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    /* ?turns flexbox on -- must be done on parent container */
+
+    flex-direction: row;
+    /* ?specifies main axis, main start and main end */
+
+    flex-wrap: wrap;
+    /* ?handles overflow */
+
+    justify-content: space-evenly;
+    /* ?handles flow along the main axis */
+
+    align-items: center;
+    /* ?handles flow along the cross axis */
+
+    background-color: lightgray;
+    width: 50vw;
+    height: 50vh;
+}
+
+.flex-items {
+    background-color: rebeccapurple;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    color: white;
+}
+
+.flex-items:nth-child(4) {
+    order: -3;
+    /* changes the order of elements laid out in the HTML */
+}
+
+.flex-items:nth-child(1) {
+    flex-grow: 2;
+    /* changes the preset sizing */
+}
